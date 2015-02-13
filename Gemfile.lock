@@ -47,6 +47,10 @@ GEM
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
     arel (6.0.0)
+    barber (0.6.0)
+      ember-source
+      execjs
+      handlebars-source (>= 1.0.0.rc.4)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -75,6 +79,18 @@ GEM
     dotenv (1.0.2)
     dotenv-rails (1.0.2)
       dotenv (= 1.0.2)
+    ember-data-source (1.0.0.beta.14.1)
+      ember-source (~> 1.8)
+    ember-rails (0.16.1)
+      active_model_serializers
+      barber (>= 0.6.0)
+      ember-data-source (>= 1.0.0.beta.5)
+      ember-source (>= 1.1.0)
+      execjs (>= 1.2)
+      handlebars-source (> 1.0.0)
+      jquery-rails (>= 1.0.17)
+      railties (>= 3.1)
+    ember-source (1.10.0)
     erubis (2.7.0)
     exception_notification (4.0.1)
       actionmailer (>= 3.0.4)
@@ -91,6 +107,7 @@ GEM
       sass (~> 3.2)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
+    handlebars-source (2.0.0)
     hike (1.2.3)
     i18n (0.7.0)
     interception (0.5)
@@ -109,7 +126,6 @@ GEM
     minitest (5.5.1)
     mousetrap-rails (1.4.6)
     multi_json (1.10.1)
-    nested_form (0.3.2)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     pg (0.18.1)
@@ -151,8 +167,6 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.1)
       loofah (~> 2.0)
-    rails_autolink (1.1.6)
-      rails (> 3.1)
     railties (4.2.0)
       actionpack (= 4.2.0)
       activesupport (= 4.2.0)
@@ -220,13 +234,13 @@ DEPENDENCIES
   date_validator
   doorkeeper
   dotenv-rails
+  ember-rails
   exception_notification
   factory_girl_rails
   faker
   font-awesome-sass
   jquery-rails
   mousetrap-rails
-  nested_form
   pg
   pry-byebug
   pry-rails
@@ -234,7 +248,6 @@ DEPENDENCIES
   pry-stack_explorer
   rack-cors
   rails (= 4.2.0)
-  rails_autolink
   responders
   rspec-rails
   sass-rails

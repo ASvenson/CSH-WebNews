@@ -17,11 +17,10 @@ gem 'responders'
 gem 'thoughtafter-nntp', require: 'nntp'
 gem 'whenever'
 
+gem 'ember-rails'
 gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'mousetrap-rails'
-gem 'nested_form'
-gem 'rails_autolink'
 
 # Asset template engines
 gem 'sass-rails'

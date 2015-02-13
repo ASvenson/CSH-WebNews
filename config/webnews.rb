@@ -1,5 +1,8 @@
-# The FQDN of the production server
-SERVER_NAME = 'webnews.csh.rit.edu'
+# The FQDN of the server WebNews is running on
+SERVER_NAME = "webnews#{'-dev' unless Rails.env.production?}.csh.rit.edu"
+
+# The base URL for legacy web client links
+LEGACY_URL_BASE = 'https://webnews.csh.rit.edu'
 
 # The domain part of email addresses for authenticated users
 LOCAL_DOMAIN = 'csh.rit.edu'

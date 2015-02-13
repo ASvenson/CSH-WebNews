@@ -13,10 +13,16 @@ RSpec.describe 'Application' do
     expect(response.status).to be 406 # Not Acceptable
   end
 
-  it 'refuses access if the correct Content-Type header is not used' do
-    get user_path, nil, 'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+  it 'refuses access to non-GET endpoints if the Content-Type is incorrect' do
+    post unreads_path, nil, 'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
 
     expect(response.status).to be 415 # Unsupported Media Type
+  end
+
+  it 'permits access to GET endpoints regardless of Content-Type' do
+    get user_path, nil, 'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+
+    expect(response.status).to be 200
   end
 
   it 'refuses access if maintenance mode is on, providing the reason' do
