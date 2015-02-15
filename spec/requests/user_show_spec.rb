@@ -9,6 +9,7 @@ RSpec.describe 'User show' do
       user: {
         username: oauth_user.username,
         display_name: oauth_user.display_name,
+        email: oauth_user.email,
         created_at: oauth_user.created_at.iso8601,
         is_admin: oauth_user.admin?
       }

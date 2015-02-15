@@ -2,7 +2,7 @@
 
 <div id="toolbar">
   <div class="user_info">
-    {{! 28px gravatar }}
+    {{ avatar currentUser.email 28 }}
     <a title="Show all my posts" href="#">
       <span class="real_name">{{currentUser.displayName}}</span>
       <span class="username">({{currentUser.username}})</span>

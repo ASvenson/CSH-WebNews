@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
 
@@ -26,6 +26,11 @@ gem 'mousetrap-rails'
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
+
+# Bower packages
+source 'https://rails-assets.org' do
+  gem 'rails-assets-js-md5'
+end
 
 group :development do
   gem 'annotate'

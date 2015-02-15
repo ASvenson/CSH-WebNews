@@ -5,6 +5,7 @@
 #= require mousetrap
 #= require mousetrap/plugins
 #= require activity-indicator
+#= require js-md5
 #= require_self
 #= require webnews
 
