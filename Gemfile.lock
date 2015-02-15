@@ -161,6 +161,7 @@ GEM
       railties (= 4.2.0)
       sprockets-rails
     rails-assets-js-md5 (1.1.0)
+    rails-assets-moment (2.9.0)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
     rails-dom-testing (1.0.5)
@@ -251,6 +252,7 @@ DEPENDENCIES
   rack-cors
   rails (= 4.2.0)
   rails-assets-js-md5!
+  rails-assets-moment!
   responders
   rspec-rails
   sass-rails
