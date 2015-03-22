@@ -1,0 +1,26 @@
+<div id="group_view">
+  <div class="buttons">
+    {{#if controller.postingAllowed}}
+      <a class="button new_draft" href="#">{{icon 'file'}} Post</a>
+    {{else}}
+      <span class="explain">This newsgroup is read-only.</span>
+    {{/if}}
+    <a id="newsgroup_search_button" class="button" href="#">
+      {{icon 'search'}} Search
+    </a>
+    <a id="mark_thread_read_button" class="button mark_read" data-scope="thread" href="#">
+      {{icon 'check'}} Read Thread
+    </a>
+    <a id="mark_group_read_button" class="button mark_read" data-scope="newsgroup" href="#">
+      {{icon 'check'}} Read All
+    </a>
+  </div>
+  <div id="group_header">
+    <h2>{{controller.description}}</h2>
+  </div>
+  {{render 'posts'}}
+</div>
+
+<div id="post_view">
+  {{outlet}}
+</div>

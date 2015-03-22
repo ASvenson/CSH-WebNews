@@ -1,2 +1,3 @@
 Webnews.Router.map ->
-  # @resource('posts')
+  @route 'newsgroup', path: 'news/:newsgroup_id', ->
+    @route 'post', path: ':post_id'

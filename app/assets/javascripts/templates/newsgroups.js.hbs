@@ -10,10 +10,12 @@
       <ul>
         {{#each newsgroup in newsgroups}}
           <li {{bind-attr class="newsgroup.personalClass newsgroup.unreadCount:unread newsgroup.postingAllowed::read_only"}}>
-            {{newsgroup.name}}
-            {{#if newsgroup.unreadCount}}
-              ({{newsgroup.unreadCount}})
-            {{/if}}
+            {{#link-to 'newsgroup.index' newsgroup}}
+              {{newsgroup.name}}
+              {{#if newsgroup.unreadCount}}
+                ({{newsgroup.unreadCount}})
+              {{/if}}
+            {{/link-to}}
           </li>
         {{/each}}
       </ul>
